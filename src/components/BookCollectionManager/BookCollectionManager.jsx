@@ -25,6 +25,24 @@ function BookCollectionManager() {
     setBooks(updatedBooks);
   }
 
+  function moveBookUp(index) {
+    if(index > 0) {
+        const newBooks = [...books];
+        [newBooks[index], newBooks[index - 1]] = 
+        [newBooks[index - 1], newBooks[index]];
+        setBooks(newBooks);
+    }
+  }
+
+  function moveBookDown(index) {
+    if(index < books.length - 1) {
+        const newBooks = [...books];
+        [newBooks[index], newBooks[index + 1]] = 
+        [newBooks[index + 1], newBooks[index]];
+        setBooks(newBooks);
+    }
+  }
+
   return (
     <div className="book-collection">
       <h1>Book Collection Manager</h1>
@@ -56,7 +74,15 @@ function BookCollectionManager() {
         {books.map((book, index) => (
           <li key={index}>
             {book.title} by {book.author} published in {book.year}
+            <div className="buttons">
             <button onClick={() => deleteBook(index)} className="deleteBtn">Delete</button>
+            <button className="moveUp" onClick={() => moveBookUp(index)}>
+              Up
+            </button>
+            <button className="moveDown" onClick={() => moveBookDown(index)}>
+              Down
+            </button>
+            </div>
           </li>
         ))}
       </ol>

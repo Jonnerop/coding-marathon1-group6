@@ -64,6 +64,7 @@ body {
   border: none;
   cursor: pointer;
   margin-top: 20px;
+  margin-left: 10px;
   background-color: #b65d5d;
   padding: 10px 15px;
   font-size: 15px;
@@ -71,19 +72,25 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.buttons {
+    background-color: #fbe4e6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .book-collection button:hover {
   background-color: #914848;
   transform: scale(1.05);
 }
 
-.deleteBtn {
+.deleteBtn, .moveUp, .moveDown {
   background-color: #914848;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
   font-size: 14px;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
