@@ -1,0 +1,116 @@
+/* 
+#f7f3ed beige
+#fbe4e6 light pink 
+#b65d5d dark pink
+#914848 red
+*/
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7f3ed;
+  margin: 0;
+  padding: 0;
+}
+
+.book-collection {
+  background-color: #ffffff !important;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  border: none;
+  justify-self: center;
+}
+
+.book-collection h1 {
+  font-weight: 700;
+  color: #914848;
+  margin-bottom: 24px;
+  text-shadow: 1px 1px 2px #fbe4e6;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fbe4e6;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff !important;
+}
+
+.book-collection input {
+  width: calc(30% - 16px);
+  margin: 8px;
+  padding: 10px;
+  border: 1px solid #d8a7a7;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff5f5;
+  color: #4d2c2c;
+}
+
+.book-collection input::placeholder {
+  color: #b65d5d;
+  font-style: italic;
+}
+
+.book-collection button {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #b65d5d;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-collection button:hover {
+  background-color: #914848;
+  transform: scale(1.05);
+}
+
+.deleteBtn {
+  background-color: #914848;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #6e3636;
+}
+
+.book-collection ol {
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.book-collection li {
+  background-color: #fbe4e6;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4d2c2c;
+  font-style: italic;
+}
+
+.book-collection li button:hover {
+  background-color: #6e3636;
+}

@@ -1,12 +1,16 @@
 nav {
-  background-color: #1E3A8A; /* Blue background */
+  background-color: #b65d5d; 
   color: #fff;
   padding: 1rem;
+  position: sticky;
+  top: 0;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around;
 }
 
 li {
@@ -20,13 +24,12 @@ li {
 }
 
 .navbar a:hover {
-  color: #93C5FD; /* Light blue hover color */
+  color: #93c5fd; /* Light blue hover color */
 }
 
 .active {
   font-weight: bold;
 }
-
 
 .page-content {
   padding: 2rem;
@@ -34,7 +37,7 @@ li {
 
 .page-content h1 {
   font-size: 2rem;
-  color: #1E3A8A; /* Blue color */
+  color: #1e3a8a; /* Blue color */
 }
 
 .page-content p {
