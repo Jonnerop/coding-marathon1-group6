@@ -1,7 +1,8 @@
+import './Home.css';
 function Home() {
     return (
-      <div>
-        <h2>Group # ?</h2>
+      <div className="home-div">
+        <h2>Group 6</h2>
         <p>Code Marathon 1</p>
       </div>
     );

@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to bottom, #fbe4e6, #b65d5d);
+  align-items: center;
+  min-height: 100vh; /*viewport height */
+}
+
+.home-div {
+  background-color: #f0f4f8;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+}
