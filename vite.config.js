@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/coding-marathon1-group6/",
   plugins: [react()],
+  server: {
+    open: true,
+  }
 })

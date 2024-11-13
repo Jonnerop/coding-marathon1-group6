@@ -1,0 +1,46 @@
+/* styles.css */
+
+.signup {
+  font-family: "Georgia", serif;
+}
+
+input,
+button {
+  border-radius: 4px;
+}
+
+.input-valid {
+  border: 2px solid green;
+}
+
+.input-invalid {
+  border: 2px solid red;
+}
+
+.password-strong {
+  border: 2px solid green;
+}
+
+.password-weak {
+  border: 2px solid red;
+}
+
+.pwts {
+  color: green !important;
+}
+
+.pwtw {
+  color: red !important;
+}
+
+.signup-btn {
+  margin-left: 1rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: rgb(14 165 233) !important;
+  color: white !important;
+}
+
+.line {
+  border-bottom: 1px solid #888;
+}
